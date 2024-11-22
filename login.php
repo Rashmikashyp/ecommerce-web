@@ -14,7 +14,6 @@
     </form>
     <?php
 session_start();
-$conn = mysqli_connect("localhost" ,"root" ,"" ,"ecommerce");
 
 
 
@@ -25,11 +24,9 @@ $conn = mysqli_connect("localhost" ,"root" ,"" ,"ecommerce");
 if (isset($_POST['sub'])) {
     $name = $_POST['user'];
     $password = $_POST['pass'];
-    $query =mysqli_query($conn , "SELECT * FROM `admin` WHERE  name = '$name' AND password = '$password'");
     // Set the session variable
     if( mysqli_num_rows($query) > 0){
         $_SESSION['user_name'] = $_POST['user'];
-        header("Location: index.php");
     }else{
         echo "not found";
     }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   
-<!-- Mirrored from themewagon.github.io/ultras/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 12:11:56 GMT -->
+<!-- Mirrored from themewagon.github.io/ultras/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 12:12:19 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <title>Ultras - Clothing Store eCommerce Store HTML Website Template</title>
@@ -73,26 +73,27 @@
           <div class="container">
             <div class="row d-flex align-items-center">
               <div class="col-md-4 header-contact">
-                <p>Contact me! <strong>+57 444 11 00 35</strong>
+                <p>Let's talk! <strong>+57 444 11 00 35</strong>
                 </p>
               </div>
               <div class="col-md-4 shipping-purchase text-center">
-                <p></p>
+                <p>Free shipping on a purchase value of $200</p>
               </div>
               <div class="col-md-4 col-sm-12 user-items">
                 <ul class="d-flex justify-content-end list-unstyled">
                   <li>
-                    <a href="user.php">
+                    <a href="index-2.html">
                       <i class="icon icon-user"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="cart.php">
+                    <a href="index-2.html">
                       <i class="icon icon-shopping-cart"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="index.php"><i class="icon icon-heart"></i>
+                    <a href="index-2.html">
+                      <i class="icon icon-heart"></i>
                     </a>
                   </li>
                   <li class="user-items search-item pe-3">
@@ -122,52 +123,52 @@
                     <ul class="menu-list">
 
                       <li class="menu-item has-sub">
-                      <li><a href="index.php" class="item-anchor" data-effect="home">Home</a></li>
-                        <!-- <ul class="submenu">
-                          <li><a href="index.php" class="item-anchor active">Home</a></li>
-                          <li><a href="index.php" class="item-anchor">Home v2</a></li>
-                        </ul> -->
+                        <a href="index-2.html" class="item-anchor active d-flex align-item-center" data-effect="Home">Home<i class="icon icon-chevron-down"></i></a>
+                        <ul class="submenu">
+                          <li><a href="index-2.html" class="item-anchor active">Home</a></li>
+                          <li><a href="index-2.html" class="item-anchor">Home v2</a></li>
+                        </ul>
                       </li>
 
-                      <li><a href="about.php" class="item-anchor" data-effect="About">About</a></li>
+                      <li><a href="about.html" class="item-anchor" data-effect="About">About</a></li>
 
                       <li class="menu-item has-sub">
-                        <a href="shop.php" class="item-anchor d-flex align-item-center" data-effect="Shop">Shop<i class="icon icon-chevron-down"></i></a>
+                        <a href="shop.html" class="item-anchor d-flex align-item-center" data-effect="Shop">Shop<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
-                          <!-- <li><a href="shop.html" class="item-anchor">Shop</a></li>
-                          <li><a href="index.php" class="item-anchor">Shop slider</a></li>
-                          <li><a href="index.php" class="item-anchor">Shop grid</a></li> -->
-                          <li><a href="index.php" class="item-anchor">Shop list</a></li>
-                          <li><a href="index.php" class="item-anchor">Single product</a></li>
-                          <!-- <li><a href="index.php" class="item-anchor">Cart</a></li>
-                          <li><a href="index.php" class="item-anchor">Wishlist</a></li>
-                          <li><a href="index.php" class="item-anchor">Checkout</a></li> -->
+                          <li><a href="shop.html" class="item-anchor">Shop</a></li>
+                          <li><a href="index-2.html" class="item-anchor">Shop slider</a></li>
+                          <li><a href="index-2.html" class="item-anchor">Shop grid</a></li>
+                          <li><a href="index-2.html" class="item-anchor">Shop list</a></li>
+                          <li><a href="index-2.html" class="item-anchor">Single product</a></li>
+                          <li><a href="index-2.html" class="item-anchor">Cart</a></li>
+                          <li><a href="index-2.html" class="item-anchor">Wishlist</a></li>
+                          <li><a href="index-2.html" class="item-anchor">Checkout</a></li>
                         </ul>
                       </li>
 
                       <li class="menu-item has-sub">
                         <a href="#" class="item-anchor d-flex align-item-center" data-effect="Pages">Pages<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
-                          <li><a href="index.php" class="item-anchor">Coming soon</a></li>
-                          <li><a href="index.php" class="item-anchor">Login</a></li>
-                          <li><a href="index.php" class="item-anchor">FAQs</a></li>
-                          <li><a href="styles.php" class="item-anchor">Styles</a></li>
-                          <li><a href="thank-you.php" class="item-anchor">Thankyou</a></li>
-                          <li><a href="index.php" class="item-anchor">Error page</a></li>
+                          <li><a href="index-2.html" class="item-anchor">Coming soon</a></li>
+                          <li><a href="index-2.html" class="item-anchor">Login</a></li>
+                          <li><a href="index-2.html" class="item-anchor">FAQs</a></li>
+                          <li><a href="styles.html" class="item-anchor">Styles</a></li>
+                          <li><a href="thank-you.html" class="item-anchor">Thankyou</a></li>
+                          <li><a href="index-2.html" class="item-anchor">Error page</a></li>
                         </ul>
                       </li>
 
                       <li class="menu-item has-sub">
-                        <a href="blog.php" class="item-anchor d-flex align-item-center" data-effect="Blog">Blog<i class="icon icon-chevron-down"></i></a>
+                        <a href="blog.html" class="item-anchor d-flex align-item-center" data-effect="Blog">Blog<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
-                          <li><a href="blog.php" class="item-anchor">Blog</a></li>
-                          <li><a href="index.php" class="item-anchor">Blog with sidebar</a></li>
-                          <li><a href="index.php" class="item-anchor">Blog masonry</a></li>
-                          <li><a href="index.php" class="item-anchor">Single post</a></li>
+                          <li><a href="blog.html" class="item-anchor">Blog</a></li>
+                          <li><a href="index-2.html" class="item-anchor">Blog with sidebar</a></li>
+                          <li><a href="index-2.html" class="item-anchor">Blog masonry</a></li>
+                          <li><a href="index-2.html" class="item-anchor">Single post</a></li>
                         </ul>
                       </li>
 
-                      <li><a href="index.php" class="item-anchor" data-effect="Contact">Contact</a></li>
+                      <li><a href="index-2.html" class="item-anchor" data-effect="Contact">Contact</a></li>
 
                     </ul>
                   </div>
@@ -1900,5 +1901,5 @@
     <script src="js/script.js"></script>
   </body>
 
-<!-- Mirrored from themewagon.github.io/ultras/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 12:12:16 GMT -->
+<!-- Mirrored from themewagon.github.io/ultras/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 12:12:19 GMT -->
 </html>
