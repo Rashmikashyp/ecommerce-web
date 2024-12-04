@@ -4,7 +4,7 @@
 
 // Database credentials
 $host = 'localhost'; // Replace with your host
-$dbname = 'ecommerce_website'; // Replace with your database name
+$dbname = 'ecommerce'; // Replace with your database name
 $username = 'root'; // Replace with your database username
 $password = ''; // Replace with your database password
 

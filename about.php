@@ -73,21 +73,21 @@
           <div class="container">
             <div class="row d-flex align-items-center">
               <div class="col-md-4 header-contact">
-                <p>Contact Me! <strong>+57 444 11 00 35</strong>
+                <p></strong>
                 </p>
               </div>
               <div class="col-md-4 shipping-purchase text-center">
                 <p></p>
               </div>
-              <div class="col-md-4 col-sm-12 user-items">
+              <!-- <div class="col-md-4 col-sm-12 user-items">
                 <ul class="d-flex justify-content-end list-unstyled">
                   <li>
-                    <a href="index.php">
+                    <a href="login.php">
                       <i class="icon icon-user"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="index.php">
+                    <a href="i.php">
                       <i class="icon icon-shopping-cart"></i>
                     </a>
                   </li>
@@ -102,7 +102,7 @@
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
           </div>
         </nav>
@@ -123,30 +123,30 @@
                     <ul class="menu-list">
 
                       <li class="menu-item has-sub">
-                      <li><a href="index.php" class="item-anchor active" data-effect="home">Home</a></li>
+                      <li><a href="index.php" class="item-anchor " data-effect="home">Home</a></li>
                         <ul class="submenu">
                           <!-- <li><a href="index-2.html" class="item-anchor">Home</a></li>
                           <li><a href="index-2.html" class="item-anchor">Home v2</a></li> -->
                         </ul>
                       </li>
 
-                      <li><a href="about.php" class="item-anchor active" data-effect="About">About</a></li>
+                      <li><a href="about.php" class="item-anchor " data-effect="About">About</a></li>
 
                       <li class="menu-item has-sub">
-                        <a href="shop.php" class="item-anchor d-flex align-item-center" data-effect="Shop">Shop<i class="icon icon-chevron-down"></i></a>
+                      <a href="shop.php" class="item-anchor " data-effect="About">Shop</a>
                         <ul class="submenu">
                           <!-- <li><a href="shop.php" class="item-anchor">Shop</a></li>
                           <li><a href="index.php" class="item-anchor">Shop slider</a></li>
                           <li><a href="index.php" class="item-anchor">Shop grid</a></li> -->
-                          <li><a href="index.php" class="item-anchor">Shop list</a></li>
-                          <li><a href="index.php" class="item-anchor">Single product</a></li>
+                          <!-- <li><a href="index.php" class="item-anchor">Shop list</a></li>
+                          <li><a href="index.php" class="item-anchor">Single product</a></li> -->
                           <!-- <li><a href="index.php" class="item-anchor">Cart</a></li>
                           <li><a href="index.php" class="item-anchor">Wishlist</a></li>
                           <li><a href="index.php" class="item-anchor">Checkout</a></li> -->
                         </ul>
                       </li>
 
-                      <li class="menu-item has-sub">
+                      <!-- <li class="menu-item has-sub">
                         <a href="#" class="item-anchor d-flex align-item-center" data-effect="Pages">Pages<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
                           <li><a href="index.php" class="item-anchor">Coming soon</a></li>
@@ -156,16 +156,16 @@
                           <li><a href="thank-you.php" class="item-anchor">Thankyou</a></li>
                           <li><a href="index.php" class="item-anchor">Error page</a></li>
                         </ul>
-                      </li>
+                      </li> -->
 
                       <li class="menu-item has-sub">
-                        <a href="blog.php" class="item-anchor d-flex align-item-center" data-effect="Blog">Blog<i class="icon icon-chevron-down"></i></a>
-                        <ul class="submenu">
+                      <li><a href="blog.php" class="item-anchor " data-effect="blog">Blog</a></li>
+                        <!-- <ul class="submenu">
                           <li><a href="blog.php" class="item-anchor">Blog</a></li>
                           <li><a href="index.php" class="item-anchor">Blog with sidebar</a></li>
                           <li><a href="index.php" class="item-anchor">Blog masonry</a></li>
                           <li><a href="index.php" class="item-anchor">Single post</a></li>
-                        </ul>
+                        </ul> -->
                       </li>
 
                       <li><a href="index.php" class="item-anchor" data-effect="Contact">Contact</a></li>
@@ -188,53 +188,17 @@
             <h1 class="page-title">About us</h1>
             <div class="breadcrumbs">
               <span class="item">
-                <a href="index-2.html">Home /</a>
+                <a href="index.php">Home /</a>
               </span>
-              <span class="item">About</span>
+              <span class="item">
+                <a href ="about.php">About</a></span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="shipping-information" class="padding-large">
-      <div class="container">
-        <div class="row d-flex flex-wrap align-items-center justify-content-between">
-          <div class="col-md-3 col-sm-6">
-            <div class="icon-box">
-              <i class="icon icon-truck"></i>
-              <h4 class="block-title">
-                <strong>Free shipping</strong> Over $200
-              </h4>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="icon-box">
-              <i class="icon icon-return"></i>
-              <h4 class="block-title">
-                <strong>Money back</strong> Return within 7 days
-              </h4>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="icon-box">
-              <i class="icon icon-tags1"></i>
-              <h4 class="block-title">
-                <strong>Buy 4 get 5th</strong> 50% off
-              </h4>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="icon-box">
-              <i class="icon icon-help_outline"></i>
-              <h4 class="block-title">
-                <strong>Any questions?</strong> experts are ready
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <br><br>
 
     <section id="about-us">
       <div class="container ">
@@ -248,11 +212,11 @@
             <div class="detail">
               <div class="display-header">
                 <h2 class="section-title">How was Ultras Store started?</h2>
-                <p>Risus augue curabitur diam senectus congue velit et. Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas odio eros at. Et libero vulputate amet duis erat volutpat vitae eget. Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas odio eros at.
+                <p>Ultra Store is a cutting-edge e-commerce platform designed to offer a seamless, fast, and secure shopping experience. Whether you're shopping for fashion, electronics, home essentials, or more, Ultra Store brings an extensive collection of high-quality products at competitive prices. Its modern design and intuitive interface ensure easy navigation, quick checkouts, and efficient order tracking.
                 <br>
-                Sed vitae metus nibh sit era. Nulla adipiscing pharetra pellentesque maecenas odio eros at. Et libero vulputate amet duis erat volutpat vitae eget. Quam libero etiam et in ac at quis. Risus augue curabitur diam senectus congue velit et. </p>
+                Ultra Store aims to be your one-stop destination for all your shopping needs, blending convenience with a premium online retail experience.</p>
                 <div class="btn-wrap">
-                  <a href="shop.html" class="btn btn-dark btn-medium d-flex align-items-center" tabindex="0">Shop our store<i class="icon icon-arrow-io"></i>
+                  <a href="shop.php" class="btn btn-dark btn-medium d-flex align-items-center" tabindex="0">Shop our store<i class="icon icon-arrow-io"></i>
                   </a>
                 </div>
               </div>
@@ -276,7 +240,7 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
                     <div class="testimonial-detail">
-                      <p>“Dignissim massa diam elementum habitant fames. Id nullam pellentesque nisi, eget cursus dictumst pharetra, sit. Pulvinar laoreet id porttitor egestas dui urna. Porttitor nibh magna dolor ultrices iaculis sit iaculis.”</p>
+                      <p>“Great customer service and fast delivery. The product exceeded my expectations!”</p>
                       <div class="author-detail">
                         <div class="name">By Maggie Rio</div>
                       </div>
@@ -284,7 +248,7 @@
                   </div>
                   <div class="swiper-slide">
                     <div class="testimonial-detail">
-                      <p>“Dignissim massa diam elementum habitant fames. Id nullam pellentesque nisi, eget cursus dictumst pharetra, sit. Pulvinar laoreet id porttitor egestas dui urna. Porttitor nibh magna dolor ultrices iaculis sit iaculis.”</p>
+                      <p>“Affordable pricing with no compromise on quality. Amazing experience!”</p>
                       <div class="author-detail">
                         <div class="name">By John Smith</div>
                       </div>
@@ -378,14 +342,41 @@
       </div>
     </section>
 
-    <section id="brand-collection" class="padding-medium bg-light-grey">
+    <section id="shipping-information" class="padding-large">
       <div class="container">
-        <div class="d-flex flex-wrap justify-content-between">
-          <img src="images/brand1.png" alt="phone" class="brand-image">
-          <img src="images/brand2.png" alt="phone" class="brand-image">
-          <img src="images/brand3.png" alt="phone" class="brand-image">
-          <img src="images/brand4.png" alt="phone" class="brand-image">
-          <img src="images/brand5.png" alt="phone" class="brand-image">
+        <div class="row d-flex flex-wrap align-items-center justify-content-between">
+          <div class="col-md-3 col-sm-6">
+            <div class="icon-box">
+              <i class="icon icon-truck"></i>
+              <h4 class="block-title">
+                <strong>Free shipping</strong> Over $200
+              </h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="icon-box">
+              <i class="icon icon-return"></i>
+              <h4 class="block-title">
+                <strong>Money back</strong> Return within 7 days
+              </h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="icon-box">
+              <i class="icon icon-tags1"></i>
+              <h4 class="block-title">
+                <strong>Buy 4 get 5th</strong> 50% off
+              </h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="icon-box">
+              <i class="icon icon-help_outline"></i>
+              <h4 class="block-title">
+                <strong>Any questions?</strong> experts are ready
+              </h4>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -447,23 +438,18 @@
                 <h5 class="widget-title">Ultras</h5>
                 <ul class="menu-list list-unstyled">
                   <li class="menu-item">
-                    <a href="about.html">About us</a>
+                    <a href="about.php">About us</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#">Conditions </a>
+                    <a href="index.php">Home </a>
                   </li>
                   <li class="menu-item">
-                    <a href="blog.html">Our Journals</a>
+                    <a href="shop.php">Shop</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#">Careers</a>
+                    <a href="blog.php">Blog</a>
                   </li>
-                  <li class="menu-item">
-                    <a href="#">Affiliate Programme</a>
-                  </li>
-                  <li class="menu-item">
-                    <a href="#">Ultras Press</a>
-                  </li>
+                 
                 </ul>
               </div>
             </div>
@@ -495,7 +481,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer-menu">
                 <h5 class="widget-title">Contact Us</h5>
-                <p>Do you have any questions or suggestions? <a href="#" class="email">ourservices@ultras.com</a>
+                <p>Do you have any questions or suggestions? <a href="#" class="email">ultras@gmail.com</a>
                 </p>
                 <p>Do you need assistance? Give us a call. <br>
                   <strong>+57 444 11 00 35</strong>
@@ -505,7 +491,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer-menu">
                 <h5 class="widget-title">Forever 2018</h5>
-                <p>Cras mattis sit ornare in metus eu amet adipiscing enim. Ullamcorper in orci, ultrices integer eget arcu. Consectetur leo dignissim lacus, lacus sagittis dictumst.</p>
+                <p>Discover a world of convenience and style at your fingertips. From trendy fashion to everyday essentials, our eCommerce platform offers a seamless shopping experience with curated collections, unbeatable prices, and fast delivery.</p>
                 <div class="social-links">
                   <ul class="d-flex list-unstyled">
                     <li>
@@ -542,7 +528,7 @@
       <div class="container">
         <div class="d-flex align-items-center flex-wrap justify-content-between">
           <div class="copyright">
-            <p>Freebies by <a href="https://templatesjungle.com/">Templates Jungle</a> Distributed by <a href="https://themewagon.com/">ThemeWagon</a>
+            <p>Designed By Rashmi Kashyap
             </p>
           </div>
           <div class="payment-method">

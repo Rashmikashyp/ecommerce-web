@@ -26,7 +26,7 @@
     <script src="js/modernizr.js"></script>
   </head>
   <body>
-
+ 
     <div class="preloader-wrapper">
       <div class="preloader">
       </div>
@@ -73,13 +73,13 @@
           <div class="container">
             <div class="row d-flex align-items-center">
               <div class="col-md-4 header-contact">
-                <p>Contact Me! <strong>+57 444 11 00 35</strong>
+                <!-- <p>Contact Me! <strong>+57 444 11 00 35</strong> -->
                 </p>
               </div>
               <div class="col-md-4 shipping-purchase text-center">
                 <p></p>
               </div>
-              <div class="col-md-4 col-sm-12 user-items">
+              <!-- <div class="col-md-4 col-sm-12 user-items">
                 <ul class="d-flex justify-content-end list-unstyled">
                   <li>
                     <a href="index.php">
@@ -102,7 +102,7 @@
                     </a>
                   </li>
                 </ul>
-              </div>
+              </div> -->
             </div>
           </div>
         </nav>
@@ -123,7 +123,7 @@
                     <ul class="menu-list">
 
                       <li class="menu-item has-sub">
-                        <a href="index.php" class="item-anchor d-flex align-item-center" data-effect="Home">Home<i class="icon icon-chevron-down"></i></a>
+                      <a href="index.php" class="item-anchor" data-effect="home">Home</a>
                         <!-- <ul class="submenu">
                           <li><a href="index.php" class="item-anchor">Home</a></li>
                           <li><a href="index.php" class="item-anchor">Home v2</a></li>
@@ -133,8 +133,8 @@
                       <li><a href="about.php" class="item-anchor" data-effect="About">About</a></li>
 
                       <li class="menu-item has-sub">
-                        <a href="shop.php" class="item-anchor d-flex align-item-center" data-effect="Shop">Shop<i class="icon icon-chevron-down"></i></a>
-                        <ul class="submenu">
+                      <a href="shop.php" class="item-anchor " data-effect="About">Shop</a>
+                        <!-- <ul class="submenu">
                           <li><a href="shop.php" class="item-anchor">Shop</a></li>
                           <li><a href="index.php" class="item-anchor">Shop slider</a></li>
                           <li><a href="index.php" class="item-anchor">Shop grid</a></li>
@@ -143,10 +143,10 @@
                           <li><a href="index.php" class="item-anchor">Cart</a></li>
                           <li><a href="index.php" class="item-anchor">Wishlist</a></li>
                           <li><a href="index.php" class="item-anchor">Checkout</a></li>
-                        </ul>
+                        </ul> -->
                       </li>
 
-                      <li class="menu-item has-sub">
+                      <!-- <li class="menu-item has-sub">
                         <a href="#" class="item-anchor d-flex align-item-center" data-effect="Pages">Pages<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
                           <li><a href="index.php" class="item-anchor">Coming soon</a></li>
@@ -156,19 +156,19 @@
                           <li><a href="thank-you.php" class="item-anchor">Thankyou</a></li>
                           <li><a href="index.php" class="item-anchor">Error page</a></li>
                         </ul>
-                      </li>
+                      </li> -->
 
                       <li class="menu-item has-sub">
-                        <a href="blog.php" class="item-anchor active d-flex align-item-center" data-effect="Blog">Blog<i class="icon icon-chevron-down"></i></a>
-                        <ul class="submenu">
+                      <a href="blog.php" class="item-anchor " data-effect="About">Blog</a>
+                        <!-- <ul class="submenu">
                           <li><a href="blog.php" class="item-anchor active">Blog</a></li>
                           <li><a href="index.php" class="item-anchor">Blog with sidebar</a></li>
                           <li><a href="index.php" class="item-anchor">Blog masonry</a></li>
                           <li><a href="index.php" class="item-anchor">Single post</a></li>
                         </ul>
-                      </li>
+                      </li> -->
 
-                      <li><a href="index-2.html" class="item-anchor" data-effect="Contact">Contact</a></li>
+                      <li><a href="contact.php" class="item-anchor" data-effect="Contact">Contact</a></li>
 
                     </ul>
                   </div>

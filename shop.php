@@ -73,21 +73,21 @@
           <div class="container">
             <div class="row d-flex align-items-center">
               <div class="col-md-4 header-contact">
-                <p>Let's talk! <strong>+57 444 11 00 35</strong>
-                </p>
+                <!-- <p>Let's talk! <strong>+57 444 11 00 35</strong>
+                </p> -->
               </div>
               <div class="col-md-4 shipping-purchase text-center">
-                <p>Free shipping on a purchase value of $200</p>
+                <!-- <p>Free shipping on a purchase value of $200</p> -->
               </div>
               <div class="col-md-4 col-sm-12 user-items">
                 <ul class="d-flex justify-content-end list-unstyled">
-                  <li>
+                  <!-- <li>
                     <a href="index-2.html">
                       <i class="icon icon-user"></i>
                     </a>
-                  </li>
+                  </li> -->
                   <li>
-                    <a href="index-2.html">
+                    <a href="cart.php">
                       <i class="icon icon-shopping-cart"></i>
                     </a>
                   </li>
@@ -111,7 +111,7 @@
             <div class="row d-flex align-items-center">
               <div class="col-lg-2 col-md-2">
                 <div class="main-logo">
-                  <a href="index-2.html">
+                  <a href="index.php">
                     <img src="images/main-logo.png" alt="logo">
                   </a>
                 </div>
@@ -123,7 +123,7 @@
                     <ul class="menu-list">
 
                       <li class="menu-item has-sub">
-                      <li><a href="home.php" class="item-anchor" data-effect="home">Home</a></li>
+                      <li><a href="index.php" class="item-anchor" data-effect="home">Home</a></li>
                         <!-- <ul class="submenu">
                           <li><a href="index-2.html" class="item-anchor">Home</a></li>
                           <li><a href="index-2.html" class="item-anchor">Home v2</a></li>
@@ -133,20 +133,20 @@
                       <li><a href="about.php" class="item-anchor" data-effect="About">About</a></li>
 
                       <li class="menu-item has-sub">
-                        <a href="shop.php" class="item-anchor active d-flex align-item-center" data-effect="Shop">Shop<i class="icon icon-chevron-down"></i></a>
+                      <a href="shop.php" class="item-anchor " data-effect="About">Shop</a>
                         <ul class="submenu">
-                          <li><a href="shop.php" class="item-anchor active">Shop</a></li>
+                          <!-- <li><a href="shop.php" class="item-anchor active">Shop</a></li>
                           <li><a href="index-2.php" class="item-anchor">Shop slider</a></li>
-                          <li><a href="index-2.php" class="item-anchor">Shop grid</a></li>
-                          <li><a href="index-2.php" class="item-anchor">Shop list</a></li>
-                          <li><a href="index-2.php" class="item-anchor">Single product</a></li>
-                          <li><a href="index-2.php" class="item-anchor">Cart</a></li>
+                          <li><a href="index-2.php" class="item-anchor">Shop grid</a></li> -->
+                          <!-- <li><a href="index-2.php" class="item-anchor">Shop list</a></li>
+                          <li><a href="index-2.php" class="item-anchor">Single product</a></li> -->
+                          <!-- <li><a href="index-2.php" class="item-anchor">Cart</a></li>
                           <li><a href="index-2.php" class="item-anchor">Wishlist</a></li>
-                          <li><a href="index-2.php" class="item-anchor">Checkout</a></li>
+                          <li><a href="index-2.php" class="item-anchor">Checkout</a></li> -->
                         </ul>
                       </li>
 
-                      <li class="menu-item has-sub">
+                      <!-- <li class="menu-item has-sub">
                         <a href="#" class="item-anchor d-flex align-item-center" data-effect="Pages">Pages<i class="icon icon-chevron-down"></i></a>
                         <ul class="submenu">
                           <li><a href="index.php" class="item-anchor">Coming soon</a></li>
@@ -156,16 +156,16 @@
                           <li><a href="thank-you.php" class="item-anchor">Thankyou</a></li>
                           <li><a href="index-2.php" class="item-anchor">Error page</a></li>
                         </ul>
-                      </li>
+                      </li> -->
 
                       <li class="menu-item has-sub">
-                        <a href="blog.php" class="item-anchor d-flex align-item-center" data-effect="Blog">Blog<i class="icon icon-chevron-down"></i></a>
-                        <ul class="submenu">
+                      <a href="blog.php" class="item-anchor " data-effect="About">Blog</a>
+                        <!-- <ul class="submenu">
                           <li><a href="blog.php" class="item-anchor">Blog</a></li>
                           <li><a href="index.php" class="item-anchor">Blog with sidebar</a></li>
                           <li><a href="index.php" class="item-anchor">Blog masonry</a></li>
                           <li><a href="index.php" class="item-anchor">Single post</a></li>
-                        </ul>
+                        </ul> -->
                       </li>
 
                       <li><a href="index.php" class="item-anchor" data-effect="Contact">Contact</a></li>
@@ -190,7 +190,8 @@
               <span class="item">
                 <a href="index.php">Home /</a>
               </span>
-              <span class="item">Shop</span>
+              <span class="item">
+                <a href ="shop.php">Shop</a></span>
             </div>
           </div>
         </div>
@@ -238,7 +239,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Half sleeve T-shirt</a>
                         </h3>
-                        <div class="item-price text-primary">$40.00</div>
+                        <div class="item-price text-primary">₹400</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -263,7 +264,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Stylish Grey T-shirt</a>
                         </h3>
-                        <div class="item-price text-primary">$35.00</div>
+                        <div class="item-price text-primary">₹350</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -288,7 +289,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Silk White Shirt</a>
                         </h3>
-                        <div class="item-price text-primary">$35.00</div>
+                        <div class="item-price text-primary">₹500</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -313,7 +314,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Grunge Hoodie</a>
                         </h3>
-                        <div class="item-price text-primary">$30.00</div>
+                        <div class="item-price text-primary">₹3000</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -338,7 +339,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Full sleeve Jeans jacket</a>
                         </h3>
-                        <div class="item-price text-primary">$40.00</div>
+                        <div class="item-price text-primary">₹400</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -363,7 +364,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Grey Check Coat</a>
                         </h3>
-                        <div class="item-price text-primary">$30.00</div>
+                        <div class="item-price text-primary">₹6500</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -388,7 +389,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Long Sleeve T-shirt</a>
                         </h3>
-                        <div class="item-price text-primary">$40.00</div>
+                        <div class="item-price text-primary">₹400</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -413,7 +414,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Half Sleeve T-shirt</a>
                         </h3>
-                        <div class="item-price text-primary">$35.00</div>
+                        <div class="item-price text-primary">₹350</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -438,7 +439,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Orange white Nike</a>
                         </h3>
-                        <div class="item-price text-primary">$55.00</div>
+                        <div class="item-price text-primary">₹5500</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -463,7 +464,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Running Shoe</a>
                         </h3>
-                        <div class="item-price text-primary">$65.00</div>
+                        <div class="item-price text-primary">₹6500</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -488,7 +489,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Tennis Shoe</a>
                         </h3>
-                        <div class="item-price text-primary">$80.00</div>
+                        <div class="item-price text-primary">₹8000</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -513,7 +514,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Nike Brand Shoe</a>
                         </h3>
-                        <div class="item-price text-primary">$65.00</div>
+                        <div class="item-price text-primary">₹6500</div>
                       </div>
                     </div>
                   </div>
@@ -542,7 +543,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Orange white Nike</a>
                         </h3>
-                        <div class="item-price text-primary">$55.00</div>
+                        <div class="item-price text-primary">₹5500</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -567,7 +568,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Running Shoe</a>
                         </h3>
-                        <div class="item-price text-primary">$65.00</div>
+                        <div class="item-price text-primary">₹6500</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -592,7 +593,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Tennis Shoe</a>
                         </h3>
-                        <div class="item-price text-primary">$80.00</div>
+                        <div class="item-price text-primary">₹8000</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -617,7 +618,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Nike Brand Shoe</a>
                         </h3>
-                        <div class="item-price text-primary">$65.00</div>
+                        <div class="item-price text-primary">₹6500</div>
                       </div>
                     </div>
                   </div>
@@ -646,7 +647,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Silk White Shirt</a>
                         </h3>
-                        <div class="item-price text-primary">$35.00</div>
+                        <div class="item-price text-primary">₹3500</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -671,7 +672,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">White Half T-shirt</a>
                         </h3>
-                        <div class="item-price text-primary">$30.00</div>
+                        <div class="item-price text-primary">₹300</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -696,7 +697,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Ghee Half T-shirt</a>
                         </h3>
-                        <div class="item-price text-primary">$40.00</div>
+                        <div class="item-price text-primary">₹400</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -721,7 +722,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Long Sleeve T-shirt</a>
                         </h3>
-                        <div class="item-price text-primary">$40.00</div>
+                        <div class="item-price text-primary">₹400</div>
                       </div>
                     </div>
                   </div>
@@ -750,7 +751,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Half sleeve T-shirt</a>
                         </h3>
-                        <div class="item-price text-primary">$40.00</div>
+                        <div class="item-price text-primary">₹400</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -775,7 +776,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Grunge Hoodie</a>
                         </h3>
-                        <div class="item-price text-primary">$30.00</div>
+                        <div class="item-price text-primary">₹3000</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -800,7 +801,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Long Sleeve T-shirt</a>
                         </h3>
-                        <div class="item-price text-primary">$40.00</div>
+                        <div class="item-price text-primary">₹400</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -825,7 +826,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Stylish Grey Pant</a>
                         </h3>
-                        <div class="item-price text-primary">$40.00</div>
+                        <div class="item-price text-primary">₹450</div>
                       </div>
                     </div>
                   </div>
@@ -854,7 +855,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">White Hoodie</a>
                         </h3>
-                        <div class="item-price text-primary">$40.00</div>
+                        <div class="item-price text-primary">₹4000</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -879,7 +880,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Navy Blue Hoodie</a>
                         </h3>
-                        <div class="item-price text-primary">$45.00</div>
+                        <div class="item-price text-primary">₹4500</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -904,7 +905,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Dark Green Hoodie</a>
                         </h3>
-                        <div class="item-price text-primary">$35.00</div>
+                        <div class="item-price text-primary">₹3500</div>
                       </div>
                     </div>
                   </div>
@@ -933,7 +934,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Silk White Shirt</a>
                         </h3>
-                        <div class="item-price text-primary">$ 35.00</div>
+                        <div class="item-price text-primary">₹350</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -958,7 +959,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Grunge Hoodie</a>
                         </h3>
-                        <div class="item-price text-primary">$ 30.00</div>
+                        <div class="item-price text-primary">₹3000</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -983,7 +984,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Grey Check Coat</a>
                         </h3>
-                        <div class="item-price text-primary">$ 30.00</div>
+                        <div class="item-price text-primary">₹6500</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -1008,7 +1009,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Long Sleeve T-shirt</a>
                         </h3>
-                        <div class="item-price text-primary">$ 40.00</div>
+                        <div class="item-price text-primary">₹400</div>
                       </div>
                     </div>
                   </div>
@@ -1037,7 +1038,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Full Sleeve Jeans Jacket</a>
                         </h3>
-                        <div class="item-price text-primary">$40.00</div>
+                        <div class="item-price text-primary">₹450</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -1062,7 +1063,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Stylish Grey Coat</a>
                         </h3>
-                        <div class="item-price text-primary">$35.00</div>
+                        <div class="item-price text-primary">₹3500</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -1087,7 +1088,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Grey Check Coat</a>
                         </h3>
-                        <div class="item-price text-primary">$35.00</div>
+                        <div class="item-price text-primary">₹3500</div>
                       </div>
                     </div>
                   </div>
@@ -1116,7 +1117,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Stylish Women Bag</a>
                         </h3>
-                        <div class="item-price text-primary">$35.00</div>
+                        <div class="item-price text-primary">₹3500</div>
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -1141,7 +1142,7 @@
                         <h3 class="product-title">
                           <a href="index-2.html">Stylish Gadgets</a>
                         </h3>
-                        <div class="item-price text-primary">$30.00</div>
+                        <div class="item-price text-primary">₹3000</div>
                       </div>
                     </div>
                   </div>
@@ -1309,66 +1310,6 @@
       </div>
     </section>
 
-    <section id="brand-collection" class="padding-medium bg-light-grey">
-      <div class="container">
-        <div class="d-flex flex-wrap justify-content-between">
-          <img src="images/brand1.png" alt="phone" class="brand-image">
-          <img src="images/brand2.png" alt="phone" class="brand-image">
-          <img src="images/brand3.png" alt="phone" class="brand-image">
-          <img src="images/brand4.png" alt="phone" class="brand-image">
-          <img src="images/brand5.png" alt="phone" class="brand-image">
-        </div>
-      </div>
-    </section>
-
-    <section id="instagram" class="padding-large">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Follow our instagram</h2>
-        </div>
-        <p>Our official Instagram account <a href="#">@ultras</a> or <a href="#">#ultras_clothing</a>
-        </p>
-        <div class="row d-flex flex-wrap justify-content-between">
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image1.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image2.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image3.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image4.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image5.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image6.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-        </div>          
-      </div>
-    </section>
-
     <section id="shipping-information">
       <hr>
       <div class="container">
@@ -1410,6 +1351,7 @@
       <hr>
     </section>
 
+    
     <footer id="footer">
       <div class="container">
         <div class="footer-menu-list">
@@ -1422,20 +1364,20 @@
                     <a href="about.html">About us</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#">Conditions </a>
+                    <a href="index.php">Home </a>
                   </li>
                   <li class="menu-item">
-                    <a href="blog.html">Our Journals</a>
+                    <a href="shop.php">Shop</a>
                   </li>
                   <li class="menu-item">
-                    <a href="#">Careers</a>
+                    <a href="blog.php">Blog</a>
                   </li>
-                  <li class="menu-item">
+                  <!-- <li class="menu-item">
                     <a href="#">Affiliate Programme</a>
                   </li>
                   <li class="menu-item">
                     <a href="#">Ultras Press</a>
-                  </li>
+                  </li> -->
                 </ul>
               </div>
             </div>
