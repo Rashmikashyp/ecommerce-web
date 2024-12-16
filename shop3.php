@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   
-<!-- Mirrored from themewagon.github.io/ultras/blog.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 12:12:20 GMT -->
+<!-- Mirrored from themewagon.github.io/ultras/shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 12:12:19 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <title>Ultras - Clothing Store eCommerce Store HTML Website Template</title>
@@ -13,7 +13,6 @@
     <meta name="author" content="">
     <meta name="keywords" content="">
     <meta name="description" content="">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
     <link rel="stylesheet" type="text/css" media="all" href="../../maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,9 +26,8 @@
     <script src="js/modernizr.js"></script>
   </head>
   <body>
- 
 
-  <div class="preloader-wrapper">
+    <div class="preloader-wrapper">
       <div class="preloader">
       </div>
     </div>
@@ -38,9 +36,27 @@
       <div class="search-popup-container">
 
         <form role="search" method="get" class="search-form" action="#">
-          <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s" />
+        <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s"  oninput="search_fun(this.value);" />
+          <p id="result"></p>
           <button type="submit" class="search-submit"><a href="#"><i class="icon icon-search"></i></a></button>
         </form>
+        <script>
+	
+  function search_fun(data){
+    var http = new XMLHttpRequest();
+  
+    http.onreadystatechange =function(){
+      if(this.readyState === 4 && this.status === 200){
+        document.getElementById("result").innerHTML = this.responseText;
+      }
+    }
+  http.open("GET" ,"search.php?data="+ data , true);
+  http.send();
+  
+  
+  }
+  </script>
+
 
         <h5 class="cat-list-title">Browse Categories</h5>
         
@@ -75,26 +91,26 @@
           <div class="container">
             <div class="row d-flex align-items-center">
               <div class="col-md-4 header-contact">
-                <!-- <p>Contact Me! <strong>+57 444 11 00 35</strong> -->
-                </p>
+                <!-- <p>Let's talk! <strong>+57 444 11 00 35</strong>
+                </p> -->
               </div>
               <div class="col-md-4 shipping-purchase text-center">
-                <p></p>
+                <!-- <p>Free shipping on a purchase value of $200</p> -->
               </div>
-              <!-- <div class="col-md-4 col-sm-12 user-items">
+              <div class="col-md-4 col-sm-12 user-items">
                 <ul class="d-flex justify-content-end list-unstyled">
-                  <li>
-                    <a href="index.php">
+                  <!-- <li>
+                    <a href="index-2.html">
                       <i class="icon icon-user"></i>
                     </a>
-                  </li>
+                  </li> -->
                   <li>
-                    <a href="index.php">
+                    <a href="cart.php">
                       <i class="icon icon-shopping-cart"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="index.php">
+                    <a href="index-2.html">
                       <i class="icon icon-heart"></i>
                     </a>
                   </li>
@@ -104,7 +120,7 @@
                     </a>
                   </li>
                 </ul>
-              </div> -->
+              </div>
             </div>
           </div>
         </nav>
@@ -125,10 +141,10 @@
                     <ul class="menu-list">
 
                       <li class="menu-item has-sub">
-                      <a href="index.php" class="item-anchor" data-effect="home">Home</a>
+                      <li><a href="index.php" class="item-anchor" data-effect="home">Home</a></li>
                         <!-- <ul class="submenu">
-                          <li><a href="index.php" class="item-anchor">Home</a></li>
-                          <li><a href="index.php" class="item-anchor">Home v2</a></li>
+                          <li><a href="index-2.html" class="item-anchor">Home</a></li>
+                          <li><a href="index-2.html" class="item-anchor">Home v2</a></li>
                         </ul> -->
                       </li>
 
@@ -136,16 +152,16 @@
 
                       <li class="menu-item has-sub">
                       <a href="shop.php" class="item-anchor " data-effect="About">Shop</a>
-                        <!-- <ul class="submenu">
-                          <li><a href="shop.php" class="item-anchor">Shop</a></li>
-                          <li><a href="index.php" class="item-anchor">Shop slider</a></li>
-                          <li><a href="index.php" class="item-anchor">Shop grid</a></li>
-                          <li><a href="index.php" class="item-anchor">Shop list</a></li>
-                          <li><a href="index.php" class="item-anchor">Single product</a></li>
-                          <li><a href="index.php" class="item-anchor">Cart</a></li>
-                          <li><a href="index.php" class="item-anchor">Wishlist</a></li>
-                          <li><a href="index.php" class="item-anchor">Checkout</a></li>
-                        </ul> -->
+                        <ul class="submenu">
+                          <!-- <li><a href="shop.php" class="item-anchor active">Shop</a></li>
+                          <li><a href="index-2.php" class="item-anchor">Shop slider</a></li>
+                          <li><a href="index-2.php" class="item-anchor">Shop grid</a></li> -->
+                          <!-- <li><a href="index-2.php" class="item-anchor">Shop list</a></li>
+                          <li><a href="index-2.php" class="item-anchor">Single product</a></li> -->
+                          <!-- <li><a href="index-2.php" class="item-anchor">Cart</a></li>
+                          <li><a href="index-2.php" class="item-anchor">Wishlist</a></li>
+                          <li><a href="index-2.php" class="item-anchor">Checkout</a></li> -->
+                        </ul>
                       </li>
 
                       <!-- <li class="menu-item has-sub">
@@ -156,21 +172,21 @@
                           <li><a href="index.php" class="item-anchor">FAQs</a></li>
                           <li><a href="styles.php" class="item-anchor">Styles</a></li>
                           <li><a href="thank-you.php" class="item-anchor">Thankyou</a></li>
-                          <li><a href="index.php" class="item-anchor">Error page</a></li>
+                          <li><a href="index-2.php" class="item-anchor">Error page</a></li>
                         </ul>
                       </li> -->
 
                       <li class="menu-item has-sub">
                       <a href="blog.php" class="item-anchor " data-effect="About">Blog</a>
                         <!-- <ul class="submenu">
-                          <li><a href="blog.php" class="item-anchor active">Blog</a></li>
+                          <li><a href="blog.php" class="item-anchor">Blog</a></li>
                           <li><a href="index.php" class="item-anchor">Blog with sidebar</a></li>
                           <li><a href="index.php" class="item-anchor">Blog masonry</a></li>
                           <li><a href="index.php" class="item-anchor">Single post</a></li>
-                        </ul>
-                      </li> -->
+                        </ul> -->
+                      </li>
 
-                      <li><a href="contact.php" class="item-anchor" data-effect="Contact">Contact</a></li>
+                      <li><a href="index.php" class="item-anchor" data-effect="Contact">Contact</a></li>
 
                     </ul>
                   </div>
@@ -183,113 +199,175 @@
       </div>
     </header>
 
-    <section class="site-banner jarallax min-height300 padding-large" style="background: url(images/hero-image1.jpg) no-repeat; background-position: top;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 class="page-title">Contact page</h1>
-            <!-- <div class="breadcrumbs">
-              <span class="item">
-                <a href="index.php">Home /</a>
-              </span>
-              <span class="item">
-              <a href="contact.php">Blog</a></span>
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </section>
 
-
-<!-- Contact Section -->
-<section class="contact-section py-5">
-    <div class="container">
-      <h2 class="text-center mb-4">Get in Touch</h2>
-      <p class="text-center text-muted mb-5">Have any questions? We'd love to hear from you!</p>
-
-      <?php
-// Include the database connection file
-include 'db.php';
-
-if (isset($_POST['sub'])) {
-    // Retrieve form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message =$_POST['message'];
-
-    // Validate form data
-    if (!empty($name) && !empty($email) && !empty($message)) {
-        // Insert query
-        $query = "INSERT INTO contact (name, email, message) VALUES ('$name', '$email', '$message')";
-
-        // Execute the query
-        if (mysqli_query($conn, $query)) {
-            echo "<div class='alert alert-success'>Message sent successfully!</div>";
-        } else {
-            echo "<div class='alert alert-danger'>Error: " . mysqli_error($conn) . "</div>";
-        }
-    } else {
-        echo "<div class='alert alert-warning'>Please fill all the fields.</div>";
-    }
+    <style>
+  .shop-now-btn {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
 }
-?>
 
+.shop-now-btn:hover {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f);
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(255, 126, 95, 0.3);
+}
 
-      <div class="row">
-        <!-- Contact Form -->
-        <div class="col-md-6">
-          <form method ="post" action ="">
-            <div class="mb-3">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Your Name" name ="name">
+.shop-now-btn:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(255, 126, 95, 0.7);
+}
+
+</style>
+
+    <div class="tab-content">
+                <div id="all" data-tab-content class="active">
+                  <div class="row d-flex flex-wrap">
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img src="images/selling-products1.jpg" alt="Books" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex justify-content-between align-items-center">
+                          <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                          </button>
+                          <button type="button" class="view-btn tooltip
+                              d-flex">
+                            <i class="icon icon-screen-full"></i>
+                            <span class="tooltip-text">Quick view</span>
+                          </button>
+                          <button type="button" class="wishlist-btn">
+                            <i class="icon icon-heart"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="index-2.html">Half sleeve T-shirt</a>
+                        </h3>
+                        <div class="item-price text-primary">₹400</div>
+                      </div>
+
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
+                    </div>
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img src="images/selling-products2.jpg" alt="Books" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex justify-content-between align-items-center">
+                          <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                          </button>
+                          <button type="button" class="view-btn tooltip
+                              d-flex">
+                            <i class="icon icon-screen-full"></i>
+                            <span class="tooltip-text">Quick view</span>
+                          </button>
+                          <button type="button" class="wishlist-btn">
+                            <i class="icon icon-heart"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="index-2.html">Stylish Grey T-shirt</a>
+                        </h3>
+                        <div class="item-price text-primary">₹350</div>
+                      </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
+                    </div>
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img src="images/selling-products3.jpg" alt="Books" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex justify-content-between align-items-center">
+                          <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                          </button>
+                          <button type="button" class="view-btn tooltip
+                              d-flex">
+                            <i class="icon icon-screen-full"></i>
+                            <span class="tooltip-text">Quick view</span>
+                          </button>
+                          <button type="button" class="wishlist-btn">
+                            <i class="icon icon-heart"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="index-2.html">Silk White Shirt</a>
+                        </h3>
+                        <div class="item-price text-primary">₹500</div>
+                      </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
+                    </div>
+
+                    <div class="product-item col-lg-4 col-md-6 col-sm-6">
+                      <div class="image-holder">
+                        <img src="images/selling-products20.jpg" alt="Books" class="product-image">
+                      </div>
+                      <div class="cart-concern">
+                        <div class="cart-button d-flex justify-content-between align-items-center">
+                          <button type="button" class="btn-wrap cart-link d-flex align-items-center">add to cart <i class="icon icon-arrow-io"></i>
+                          </button>
+                          <button type="button" class="view-btn tooltip
+                              d-flex">
+                            <i class="icon icon-screen-full"></i>
+                            <span class="tooltip-text">Quick view</span>
+                          </button>
+                          <button type="button" class="wishlist-btn">
+                            <i class="icon icon-heart"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <div class="product-detail">
+                        <h3 class="product-title">
+                          <a href="index-2.html">Stylish Gadgets</a>
+                        </h3>
+                        <div class="item-price text-primary">₹3000</div>
+                      </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <nav class="navigation paging-navigation text-center padding-medium" role="navigation">
+                <div class="pagination loop-pagination d-flex justify-content-center">
+                  <a href="#" class="pagination-arrow d-flex align-items-center">
+                    <i class="icon icon-arrow-left"></i>
+                  </a>
+                  <span aria-current="page" class="page-numbers "><a href ="shop.php">1</a></span>
+                  <a class="page-numbers " href="shop2.php">2</a>
+                  <a class="page-numbers current" href="shop3.php">3</a>
+                  <a href="#" class="pagination-arrow d-flex align-items-center">
+                    <i class="icon icon-arrow-right"></i>
+                  </a>
+                </div>
+              </nav>
             </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" placeholder="Your Email" name ="email">
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message</label>
-              <textarea class="form-control" id="message" rows="5" placeholder="Your Message" name ="message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary" name ="sub">Submit</button>
-          </form>
-        </div>
+          </section>
 
-        <!-- Contact Details -->
-        <div class="col-md-6">
-          <div class="card p-4 shadow">
-            <h4>Contact Information</h4>
-            <p class="text-muted">Feel free to reach out to us through any of the below channels:</p>
-            <ul class="list-unstyled">
-              <li><strong>Email:</strong> support@eshop.com</li>
-              <li><strong>Phone:</strong> +1 123 456 7890</li>
-              <li><strong>Address:</strong> 123 E-Shop Lane, Commerce City</li>
-            </ul>
-            <!-- <h5>Follow Us</h5>
-            <div>
-              <a href="#" class="btn btn-outline-dark btn-sm me-2">Facebook</a>
-              <a href="#" class="btn btn-outline-dark btn-sm me-2">Twitter</a>
-              <a href="#" class="btn btn-outline-dark btn-sm">Instagram</a>
-            </div> -->
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-
-
-
-
-
-
-
-
-
-    
-  <footer id="footer">
+          <footer id="footer">
       <div class="container">
         <div class="footer-menu-list">
           <div class="row d-flex flex-wrap justify-content-between">
@@ -408,12 +486,12 @@ if (isset($_POST['sub'])) {
       </div>
     </div>
 
+    
+
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>
   </body>
 
-<!-- Mirrored from themewagon.github.io/ultras/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 12:12:16 GMT -->
-
-</body>
+<!-- Mirrored from themewagon.github.io/ultras/shop.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 19 Nov 2024 12:12:19 GMT -->
 </html>

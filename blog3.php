@@ -26,8 +26,8 @@
     <script src="js/modernizr.js"></script>
   </head>
   <body>
- 
-    <div class="preloader-wrapper">
+
+  <div class="preloader-wrapper">
       <div class="preloader">
       </div>
     </div>
@@ -179,24 +179,9 @@
           </div>
         </nav>
       </div>
-    </header>
-
-    <section class="site-banner jarallax min-height300 padding-large" style="background: url(images/hero-image1.jpg) no-repeat; background-position: top;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 class="page-title">Blog page</h1>
-            <div class="breadcrumbs">
-              <span class="item">
-                <a href="index.php">Home /</a>
-              </span>
-              <span class="item"><a href="blog.php">Blog</a></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+    </header>         
+    
+    
     <section id="latest-blog" class="post-grid padding-large">
       <div class="container">
         <div class="row d-flex flex-wrap">
@@ -377,9 +362,9 @@
             <a href="#" class="pagination-arrow d-flex align-items-center">
               <i class="icon icon-arrow-left"></i>
             </a>
-            <span aria-current="page" class="page-numbers current">1</span>
+            <span aria-current="page" class="page-numbers23"> <a href="blog.php">1</a></span>
             <a class="page-numbers" href="blog2.php">2</a>
-            <a class="page-numbers" href="blog3.php">3</a>
+            <a class="page-numbers current" href="blog3.php">3</a>
             <a href="#" class="pagination-arrow d-flex align-items-center">
               <i class="icon icon-arrow-right"></i>
             </a>
@@ -387,107 +372,6 @@
         </nav>
       </div>
     </section>
-
-    <!-- <section id="brand-collection" class="padding-medium bg-light-grey">
-      <div class="container">
-        <div class="d-flex flex-wrap justify-content-between">
-          <img src="images/brand1.png" alt="phone" class="brand-image">
-          <img src="images/brand2.png" alt="phone" class="brand-image">
-          <img src="images/brand3.png" alt="phone" class="brand-image">
-          <img src="images/brand4.png" alt="phone" class="brand-image">
-          <img src="images/brand5.png" alt="phone" class="brand-image">
-        </div>
-      </div>
-    </section> -->
-
-    <section id="instagram" class="padding-large">
-      <div class="container">
-        <div class="section-header">
-          <h2 class="section-title">Follow our instagram</h2>
-        </div>
-        <p>Our official Instagram account <a href="#">@ultras</a> or <a href="#">#ultras_clothing</a>
-        </p>
-        <div class="row d-flex flex-wrap justify-content-between">
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image1.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image2.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image3.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image4.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image5.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-          <div class="col-lg-2 col-md-4 col-sm-6">
-            <figure class="zoom-effect">
-              <img src="images/insta-image6.jpg" alt="instagram" class="insta-image">
-              <i class="icon icon-instagram"></i>
-            </figure>
-          </div>
-        </div>          
-      </div>
-    </section>
-
-    <!-- <section id="shipping-information">
-      <hr>
-      <div class="container">
-        <div class="row d-flex flex-wrap align-items-center justify-content-between">
-          <div class="col-md-3 col-sm-6">
-            <div class="icon-box">
-              <i class="icon icon-truck"></i>
-              <h4 class="block-title">
-                <strong>Free shipping</strong> Over $200
-              </h4>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="icon-box">
-              <i class="icon icon-return"></i>
-              <h4 class="block-title">
-                <strong>Money back</strong> Return within 7 days
-              </h4>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="icon-box">
-              <i class="icon icon-tags1"></i>
-              <h4 class="block-title">
-                <strong>Buy 4 get 5th</strong> 50% off
-              </h4>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <div class="icon-box">
-              <i class="icon icon-help_outline"></i>
-              <h4 class="block-title">
-                <strong>Any questions?</strong> experts are ready
-              </h4>
-            </div>
-          </div>
-        </div>
-      </div>
-      <hr>
-    </section> -->
 
     <footer id="footer">
       <div class="container">

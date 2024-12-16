@@ -36,9 +36,30 @@
       <div class="search-popup-container">
 
         <form role="search" method="get" class="search-form" action="#">
-          <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s" />
+        <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s"  oninput="search_fun(this.value);" />
+          <p id="result"></p>
           <button type="submit" class="search-submit"><a href="#"><i class="icon icon-search"></i></a></button>
         </form>
+
+        <script>
+	
+  function search_fun(data){
+    var http = new XMLHttpRequest();
+  
+    http.onreadystatechange =function(){
+      if(this.readyState === 4 && this.status === 200){
+        document.getElementById("result").innerHTML = this.responseText;
+      }
+    }
+  http.open("GET" ,"search.php?data="+ data , true);
+  http.send();
+  
+  
+  }
+  </script>
+  
+
+
 
         <h5 class="cat-list-title">Browse Categories</h5>
         
@@ -198,6 +219,31 @@
       </div>
     </section>
 
+    <style>
+  .shop-now-btn {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f);
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(255, 126, 95, 0.3);
+}
+
+.shop-now-btn:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(255, 126, 95, 0.7);
+}
+
+</style>
+
     <div class="shopify-grid padding-large">
       <div class="container">
         <div class="row">
@@ -214,6 +260,7 @@
                 <li data-tab-target="#jackets" class="tab">Jackets</li>
                 <li data-tab-target="#accessories" class="tab">Accessories</li>
               </ul>
+
               <div class="tab-content">
                 <div id="all" data-tab-content class="active">
                   <div class="row d-flex flex-wrap">
@@ -241,6 +288,11 @@
                         </h3>
                         <div class="item-price text-primary">₹400</div>
                       </div>
+
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -266,6 +318,10 @@
                         </h3>
                         <div class="item-price text-primary">₹350</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -291,6 +347,10 @@
                         </h3>
                         <div class="item-price text-primary">₹500</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -316,6 +376,10 @@
                         </h3>
                         <div class="item-price text-primary">₹3000</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -341,6 +405,10 @@
                         </h3>
                         <div class="item-price text-primary">₹400</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -366,6 +434,10 @@
                         </h3>
                         <div class="item-price text-primary">₹6500</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -391,6 +463,10 @@
                         </h3>
                         <div class="item-price text-primary">₹400</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -416,6 +492,10 @@
                         </h3>
                         <div class="item-price text-primary">₹350</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -441,6 +521,10 @@
                         </h3>
                         <div class="item-price text-primary">₹5500</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -466,6 +550,10 @@
                         </h3>
                         <div class="item-price text-primary">₹6500</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -491,6 +579,10 @@
                         </h3>
                         <div class="item-price text-primary">₹8000</div>
                       </div>
+                       <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -516,6 +608,10 @@
                         </h3>
                         <div class="item-price text-primary">₹6500</div>
                       </div>
+                       <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                   </div>
                 </div>
@@ -545,6 +641,10 @@
                         </h3>
                         <div class="item-price text-primary">₹5500</div>
                       </div>
+                       <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -570,6 +670,10 @@
                         </h3>
                         <div class="item-price text-primary">₹6500</div>
                       </div>
+                       <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -595,6 +699,10 @@
                         </h3>
                         <div class="item-price text-primary">₹8000</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -620,6 +728,10 @@
                         </h3>
                         <div class="item-price text-primary">₹6500</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                   </div>
                 </div>
@@ -649,6 +761,10 @@
                         </h3>
                         <div class="item-price text-primary">₹3500</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -674,6 +790,10 @@
                         </h3>
                         <div class="item-price text-primary">₹300</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -699,6 +819,10 @@
                         </h3>
                         <div class="item-price text-primary">₹400</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -724,6 +848,10 @@
                         </h3>
                         <div class="item-price text-primary">₹400</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                   </div>
                 </div>
@@ -753,6 +881,10 @@
                         </h3>
                         <div class="item-price text-primary">₹400</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -778,6 +910,10 @@
                         </h3>
                         <div class="item-price text-primary">₹3000</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -803,6 +939,10 @@
                         </h3>
                         <div class="item-price text-primary">₹400</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -828,6 +968,10 @@
                         </h3>
                         <div class="item-price text-primary">₹450</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                   </div>
                 </div>
@@ -857,6 +1001,10 @@
                         </h3>
                         <div class="item-price text-primary">₹4000</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -882,6 +1030,10 @@
                         </h3>
                         <div class="item-price text-primary">₹4500</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -907,6 +1059,10 @@
                         </h3>
                         <div class="item-price text-primary">₹3500</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                   </div>
                 </div>
@@ -936,6 +1092,10 @@
                         </h3>
                         <div class="item-price text-primary">₹350</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -961,6 +1121,10 @@
                         </h3>
                         <div class="item-price text-primary">₹3000</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -986,6 +1150,10 @@
                         </h3>
                         <div class="item-price text-primary">₹6500</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -1011,6 +1179,10 @@
                         </h3>
                         <div class="item-price text-primary">₹400</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                   </div>
                 </div>
@@ -1040,6 +1212,10 @@
                         </h3>
                         <div class="item-price text-primary">₹450</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -1064,6 +1240,10 @@
                           <a href="index-2.html">Stylish Grey Coat</a>
                         </h3>
                         <div class="item-price text-primary">₹3500</div>
+                        <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                       </div>
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
@@ -1090,6 +1270,10 @@
                         </h3>
                         <div class="item-price text-primary">₹3500</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                   </div>
                 </div>
@@ -1119,6 +1303,10 @@
                         </h3>
                         <div class="item-price text-primary">₹3500</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                     <div class="product-item col-lg-4 col-md-6 col-sm-6">
                       <div class="image-holder">
@@ -1144,18 +1332,23 @@
                         </h3>
                         <div class="item-price text-primary">₹3000</div>
                       </div>
+                      <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
+
                     </div>
                   </div>
                 </div>
               </div>
+              
               <nav class="navigation paging-navigation text-center padding-medium" role="navigation">
                 <div class="pagination loop-pagination d-flex justify-content-center">
                   <a href="#" class="pagination-arrow d-flex align-items-center">
                     <i class="icon icon-arrow-left"></i>
                   </a>
                   <span aria-current="page" class="page-numbers current">1</span>
-                  <a class="page-numbers" href="#">2</a>
-                  <a class="page-numbers" href="#">3</a>
+                  <a class="page-numbers" href="shop2.php">2</a>
+                  <a class="page-numbers" href="shop3.php">3</a>
                   <a href="#" class="pagination-arrow d-flex align-items-center">
                     <i class="icon icon-arrow-right"></i>
                   </a>
@@ -1172,6 +1365,7 @@
                     <input class="search-field" placeholder="Search" type="text">
                     <button class="btn btn-dark"><i class="icon icon-search"></i></button>
                   </form>
+                  
                 </div> 
               </div>
               <div class="widgets widget-product-tags">
@@ -1361,7 +1555,7 @@
                 <h5 class="widget-title">Ultras</h5>
                 <ul class="menu-list list-unstyled">
                   <li class="menu-item">
-                    <a href="about.html">About us</a>
+                    <a href="about.php">About us</a>
                   </li>
                   <li class="menu-item">
                     <a href="index.php">Home </a>
@@ -1386,10 +1580,10 @@
                 <h5 class="widget-title">Customer Service</h5>
                 <ul class="menu-list list-unstyled">
                   <li class="menu-item">
-                    <a href="index-2.html">FAQ</a>
+                    <a href="index.php">FAQ</a>
                   </li>
                   <li class="menu-item">
-                    <a href="index-2.html">Contact</a>
+                    <a href="contact.php">Contact</a>
                   </li>
                   <li class="menu-item">
                     <a href="#">Privacy Policy</a>
@@ -1409,7 +1603,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer-menu">
                 <h5 class="widget-title">Contact Us</h5>
-                <p>Do you have any questions or suggestions? <a href="#" class="email">ourservices@ultras.com</a>
+                <p>Do you have any questions or suggestions? <a href="#" class="email">ultras@gmail.com</a>
                 </p>
                 <p>Do you need assistance? Give us a call. <br>
                   <strong>+57 444 11 00 35</strong>
@@ -1419,7 +1613,7 @@
             <div class="col-lg-3 col-md-6 col-sm-6">
               <div class="footer-menu">
                 <h5 class="widget-title">Forever 2018</h5>
-                <p>Cras mattis sit ornare in metus eu amet adipiscing enim. Ullamcorper in orci, ultrices integer eget arcu. Consectetur leo dignissim lacus, lacus sagittis dictumst.</p>
+                <p>Discover a world of convenience and style at your fingertips. From trendy fashion to everyday essentials, our eCommerce platform offers a seamless shopping experience with curated collections, unbeatable prices, and fast delivery.</p>
                 <div class="social-links">
                   <ul class="d-flex list-unstyled">
                     <li>
@@ -1429,17 +1623,17 @@
                     </li>
                     <li>
                       <a href="#">
+                      <i class="icon icon-instagram"></i>
+                      </a>
+                    </li>
+                    <!-- <li>
+                      <a href="#">
+                      <i class="icon icon-whatsapp"></i>
+                      </a>
+                    </li> -->
+                    <li>
+                      <a href="#">
                         <i class="icon icon-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-youtube-play"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-behance-square"></i>
                       </a>
                     </li>
                   </ul>
@@ -1456,7 +1650,7 @@
       <div class="container">
         <div class="d-flex align-items-center flex-wrap justify-content-between">
           <div class="copyright">
-            <p>Freebies by <a href="https://templatesjungle.com/">Templates Jungle</a> Distributed by <a href="https://themewagon.com/">ThemeWagon</a>
+            <p>Designed By Rashmi Kashyap
             </p>
           </div>
           <div class="payment-method">
@@ -1470,6 +1664,8 @@
         </div>
       </div>
     </div>
+
+    
 
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/plugins.js"></script>

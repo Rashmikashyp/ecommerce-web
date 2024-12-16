@@ -449,7 +449,12 @@
                   <li class="menu-item">
                     <a href="blog.php">Blog</a>
                   </li>
-                 
+                  <!-- <li class="menu-item">
+                    <a href="#">Affiliate Programme</a>
+                  </li>
+                  <li class="menu-item">
+                    <a href="#">Ultras Press</a>
+                  </li> -->
                 </ul>
               </div>
             </div>
@@ -458,10 +463,10 @@
                 <h5 class="widget-title">Customer Service</h5>
                 <ul class="menu-list list-unstyled">
                   <li class="menu-item">
-                    <a href="index-2.html">FAQ</a>
+                    <a href="index.php">FAQ</a>
                   </li>
                   <li class="menu-item">
-                    <a href="index-2.html">Contact</a>
+                    <a href="contact.php">Contact</a>
                   </li>
                   <li class="menu-item">
                     <a href="#">Privacy Policy</a>
@@ -501,17 +506,17 @@
                     </li>
                     <li>
                       <a href="#">
+                      <i class="icon icon-instagram"></i>
+                      </a>
+                    </li>
+                    <!-- <li>
+                      <a href="#">
+                      <i class="icon icon-whatsapp"></i>
+                      </a>
+                    </li> -->
+                    <li>
+                      <a href="#">
                         <i class="icon icon-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-youtube-play"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-behance-square"></i>
                       </a>
                     </li>
                   </ul>
@@ -542,7 +547,6 @@
         </div>
       </div>
     </div>
-
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>

@@ -30,13 +30,41 @@
       </div>
     </div>
 
+
+
+
     <div class="search-popup">
       <div class="search-popup-container">
 
         <form role="search" method="get" class="search-form" action="#">
-          <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s" />
+          <input type="search" id="search-form" class="search-field" placeholder="Type and press enter" value="" name="s"  oninput="search_fun(this.value);" />
+          <p id="result"></p>
           <button type="submit" class="search-submit"><a href="#"><i class="icon icon-search"></i></a></button>
         </form>
+
+        <script>
+	
+  function search_fun(data){
+    var http = new XMLHttpRequest();
+  
+    http.onreadystatechange =function(){
+      if(this.readyState === 4 && this.status === 200){
+        document.getElementById("result").innerHTML = this.responseText;
+      }
+    }
+  http.open("GET" ,"search.php?data="+ data , true);
+  http.send();
+  
+  
+  }
+  </script>
+  
+
+
+
+
+
+
 
         <h5 class="cat-list-title">Browse Categories</h5>
         
@@ -65,6 +93,7 @@
         </ul>
       </div>
     </div>
+    
     <header id="header">
       <div id="header-wrap">
         <nav class="secondary-nav border-bottom">
@@ -93,6 +122,7 @@
                     <a href="index.php"><i class="icon icon-heart"></i>
                     </a>
                   </li>
+
                   <li class="user-items search-item pe-3">
                     <a href="#" class="search-button">
                       <i class="icon icon-search"></i>
@@ -224,6 +254,32 @@
       </div>
     </section>
 
+<style>
+  .shop-now-btn {
+  background: linear-gradient(90deg, #ff7e5f, #feb47b);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.shop-now-btn:hover {
+  background: linear-gradient(90deg, #feb47b, #ff7e5f);
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(255, 126, 95, 0.3);
+}
+
+.shop-now-btn:focus {
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(255, 126, 95, 0.7);
+}
+
+</style>
+
+
     <section id="featured-products" class="product-store padding-large">
       <div class="container">
         <div class="section-header d-flex flex-wrap align-items-center justify-content-between">
@@ -255,9 +311,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Full sleeve cover shirt</a>
+                    Full sleeve cover shirt
                   </h3>
                   <span class="item-price text-primary">Rs.1500</span>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href ="single_product.php"><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
             </div>
@@ -282,9 +341,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Volunteer Half blue</a>
+                    Volunteer Half blue
                   </h3>
                   <span class="item-price text-primary">Rs.1000</span>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
             </div>
@@ -309,9 +371,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Double yellow shirt</a>
+                    Double yellow shirt
                   </h3>
                   <span class="item-price text-primary">Rs.2400</span>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
             </div>
@@ -336,9 +401,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Long belly grey pant</a>
+                    Long belly grey pant
                   </h3>
                   <span class="item-price text-primary">Rs.1300</span>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
             </div>
@@ -456,9 +524,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Half sleeve T-shirt</a>
-                  </h3>
+                    Half sleeve T-shirt                
+                    </h3>
                   <div class="item-price text-primary">Rs.400</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -481,9 +552,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Stylish Grey T-shirt</a>
+                    Stylish Grey T-shirt
                   </h3>
                   <div class="item-price text-primary">Rs.350</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -506,9 +580,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Silk White Shirt</a>
+                    Silk White Shirt
                   </h3>
                   <div class="item-price text-primary">Rs.500</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -531,9 +608,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Grunge Hoodie</a>
+                    Grunge Hoodie
                   </h3>
                   <div class="item-price text-primary">Rs.3000</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -556,9 +636,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Full sleeve Jeans jacket</a>
+                    Full sleeve Jeans jacket
                   </h3>
                   <div class="item-price text-primary">Rs.5500</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -581,9 +664,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Grey Check Coat</a>
+                    Grey Check Coat
                   </h3>
                   <div class="item-price text-primary">Rs.6500</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -606,9 +692,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Long Sleeve T-shirt</a>
+                    Long Sleeve T-shirt
                   </h3>
                   <div class="item-price text-primary">Rs.550</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -631,9 +720,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Half Sleeve T-shirt</a>
+                    Half Sleeve T-shirt
                   </h3>
                   <div class="item-price text-primary">Rs.450</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -656,9 +748,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Orange white Nike</a>
+                    Orange white Nike
                   </h3>
                   <div class="item-price text-primary">Rs.3000</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -681,9 +776,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Running Shoe</a>
+                    Running Shoe
                   </h3>
                   <div class="item-price text-primary">Rs.1200</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -706,9 +804,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Tennis Shoe</a>
+                    Tennis Shoe
                   </h3>
                   <div class="item-price text-primary">Rs.8000</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -731,9 +832,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Nike Brand Shoe</a>
+                    Nike Brand Shoe
                   </h3>
                   <div class="item-price text-primary">Rs.6500</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
             </div>
@@ -760,9 +864,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Orange white Nike</a>
+                    Orange white Nike
                   </h3>
                   <div class="item-price text-primary">Rs.3000</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -785,9 +892,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Running Shoe</a>
+                    Running Shoe
                   </h3>
                   <div class="item-price text-primary">Rs.1200</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -810,9 +920,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Tennis Shoe</a>
+                    Tennis Shoe
                   </h3>
                   <div class="item-price text-primary">Rs.8000</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -835,9 +948,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Nike Brand Shoe</a>
+                  Nike Brand Shoe
                   </h3>
                   <div class="item-price text-primary">Rs.6500</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
             </div>
@@ -864,9 +980,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Silk White Shirt</a>
+                    Silk White Shirt
                   </h3>
                   <div class="item-price text-primary">Rs.500</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -889,9 +1008,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">White Half T-shirt</a>
+                    White Half T-shirt
                   </h3>
                   <div class="item-price text-primary">Rs.300</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -914,9 +1036,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Ghee Half T-shirt</a>
+                    Ghee Half T-shirt
                   </h3>
                   <div class="item-price text-primary">Rs.400</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -939,9 +1064,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Long Sleeve T-shirt</a>
+                    Long Sleeve T-shirt
                   </h3>
                   <div class="item-price text-primary">$.500</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
             </div>
@@ -968,9 +1096,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Half sleeve T-shirt</a>
+                    Half sleeve T-shirt
                   </h3>
                   <div class="item-price text-primary">Rs.400</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -993,9 +1124,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Grunge Hoodie</a>
+                Grunge Hoodie
                   </h3>
                   <div class="item-price text-primary">Rs.5000</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -1018,9 +1152,11 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Long Sleeve T-shirt</a>
+                    Long Sleeve T-shirt
                   </h3>
                   <div class="item-price text-primary">Rs.500</div>
+                </div><div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -1043,9 +1179,11 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Stylish Grey Pant</a>
+                    Stylish Grey Pant
                   </h3>
                   <div class="item-price text-primary">Rs.3000</div>
+                </div><div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
             </div>
@@ -1072,9 +1210,11 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">White Hoodie</a>
+                    White Hoodie
                   </h3>
                   <div class="item-price text-primary">Rs.4000</div>
+                </div><div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -1097,9 +1237,11 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Navy Blue Hoodie</a>
+                    Navy Blue Hoodie
                   </h3>
                   <div class="item-price text-primary">Rs.4500</div>
+                </div><div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -1122,9 +1264,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="shop.php">Dark Green Hoodie</a>
+                    Dark Green Hoodie
                   </h3>
                   <div class="item-price text-primary">Rs.5500</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
             </div>
@@ -1151,9 +1296,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Silk White Shirt</a>
+                    Silk White Shirt
                   </h3>
-                  <div class="item-price text-primary">$ 35.00</div>
+                  <div class="item-price text-primary">$35.00</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -1176,9 +1324,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Grunge Hoodie</a>
+                    Grunge Hoodie
                   </h3>
                   <div class="item-price text-primary">$ 30.00</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -1201,9 +1352,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Grey Check Coat</a>
+                    Grey Check Coat
                   </h3>
                   <div class="item-price text-primary">$ 30.00</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -1226,9 +1380,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Long Sleeve T-shirt</a>
+                    Long Sleeve T-shirt
                   </h3>
                   <div class="item-price text-primary">$ 40.00</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
             </div>
@@ -1255,9 +1412,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Full Sleeve Jeans Jacket</a>
+                    Full Sleeve Jeans Jacket
                   </h3>
                   <div class="item-price text-primary">$40.00</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -1280,9 +1440,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Stylish Grey Coat</a>
+                    Stylish Grey Coat
                   </h3>
                   <div class="item-price text-primary">$35.00</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -1305,9 +1468,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Grey Check Coat</a>
+                    Grey Check Coat
                   </h3>
                   <div class="item-price text-primary">$35.00</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
             </div>
@@ -1334,9 +1500,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Stylish Women Bag</a>
+                    Stylish Women Bag
                   </h3>
                   <div class="item-price text-primary">$35.00</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
               <div class="product-item col-lg-3 col-md-6 col-sm-6">
@@ -1359,9 +1528,12 @@
                 </div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Stylish Gadgets</a>
+                  Stylish Gadgets
                   </h3>
                   <div class="item-price text-primary">$30.00</div>
+                </div>
+                <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
                 </div>
               </div>
             </div>
@@ -1369,6 +1541,8 @@
         </div>
       </div>
     </section>
+
+
 
     <section id="testimonials" class="padding-large no-padding-bottom">
       <div class="container">
@@ -1443,11 +1617,14 @@
                 <div class="discount">10% Off</div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Full sleeve cover shirt</a>
+                    Full sleeve cover shirt
                   </h3>
                   <div class="item-price text-primary">
                     <del class="prev-price">Rs.500</del>Rs.400
                   </div>
+                  <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
                 </div>
               </div>
             </div>
@@ -1471,11 +1648,14 @@
                 <div class="discount">10% Off</div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Long Sleeve T-shirt</a>
+                    Long Sleeve T-shirt
                   </h3>
                   <div class="item-price text-primary">
                     <del class="prev-price">Rs.500</del>Rs.400
                   </div>
+                  <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
                 </div>
               </div>
             </div>
@@ -1499,11 +1679,14 @@
                 <div class="discount">10% Off</div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Grey Check Coat</a>
+                    Grey Check Coat
                   </h3>
                   <div class="item-price text-primary">
                     <del class="prev-price">Rs.5500</del>Rs.4500
                   </div>
+                  <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
                 </div>
               </div>
             </div>
@@ -1527,11 +1710,14 @@
                 <div class="discount">10% Off</div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Silk White Shirt</a>
+                  Silk White Shirt
                   </h3>
                   <div class="item-price text-primary">
                     <del class="prev-price">Rs.450</del>Rs.350
                   </div>
+                  <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
                 </div>
               </div>
             </div>
@@ -1555,11 +1741,14 @@
                 <div class="discount">10% Off</div>
                 <div class="product-detail">
                   <h3 class="product-title">
-                    <a href="index-2.html">Blue Jeans pant</a>
+                  Blue Jeans pant
                   </h3>
                   <div class="item-price text-primary">
                     <del class="prev-price">Rs.500</del>Rs.450
                   </div>
+                  <div class="container text-center mt-5">
+                  <a href =""><button class="btn shop-now-btn">Shop Now</button></a>
+                </div>
                 </div>
               </div>
             </div>
@@ -1851,17 +2040,17 @@
                     </li>
                     <li>
                       <a href="#">
+                      <i class="icon icon-instagram"></i>
+                      </a>
+                    </li>
+                    <!-- <li>
+                      <a href="#">
+                      <i class="icon icon-whatsapp"></i>
+                      </a>
+                    </li> -->
+                    <li>
+                      <a href="#">
                         <i class="icon icon-twitter"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-youtube-play"></i>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#">
-                        <i class="icon icon-behance-square"></i>
                       </a>
                     </li>
                   </ul>
@@ -1893,6 +2082,7 @@
       </div>
     </div>
 
+    
     <script src="js/jquery-1.11.0.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/script.js"></script>

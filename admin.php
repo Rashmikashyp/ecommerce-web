@@ -97,17 +97,6 @@ session_start();
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
-
-
-
-
-
-
-
-
-
-
-
     <?php
     if(isset($_POST['sub'])){
         $name =$_POST['name'];
@@ -119,16 +108,11 @@ session_start();
         $profile_tmp_name =$_FILES['profile']['tmp_name'];
         move_uploaded_file($profile_tmp_name,'upload/'.$profile_name);
     }
-    
     // $location ="image_data/" . $profile_name;
-
-    
     $query=mysqli_query($conn ,"INSERT INTO `admin`(`name`, `email`, `password`,`img`) VALUES ('$name','$email','$password','$profile_name')");
-    
     if($query){
         // header("Location:index.php");
         echo $query;
-
         // move_uploaded_file($image_tmp_name ,$location);
     }
     else{
